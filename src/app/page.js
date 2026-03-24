@@ -1,18 +1,17 @@
-import Image from "next/image";
-import { FaApple } from "react-icons/fa";
+import Header from "@/components/HeaderNav/Header";
+import MainContent from "@/components/MainComponents/MainContent";
+import BottomNavFull from "@/components/MainComponents/BottomNavigation/BottomNavFull";
 
 export default function Home() {
   return (
     <div>
-      <div>
-        <Image
-          src="/mint.png"
-          alt="billede af et ur"
-          width={500}
-          height={500}
-        />
-      </div>
-      <FaApple size={50} />
+      <header>
+        <Header />
+      </header>
+      <main>
+        <MainContent />
+        <BottomNavFull />
+      </main>
     </div>
   );
 }
