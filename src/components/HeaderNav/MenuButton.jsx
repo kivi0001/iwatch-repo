@@ -1,6 +1,8 @@
 const MenuButton = ({ text }) => {
   return (
-    <button className="MenuButton">{text}</button>
+    <button className="menu-button">
+      {text}
+    </button>
   );
 };
 
