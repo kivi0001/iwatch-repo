@@ -4,14 +4,9 @@ import BottomNavFull from "@/components/MainComponents/BottomNavigation/BottomNa
 
 export default function Home() {
   return (
-    <div>
-      <header>
-        <Header />
-      </header>
-      <main>
-        <MainContent />
-        <BottomNavFull />
-      </main>
-    </div>
+    <main>
+      <MainContent />
+      <BottomNavFull />
+    </main>
   );
 }
