@@ -3,7 +3,7 @@ import ArrowNav from "./ArrowNav";
 
 const BottomNavFull = () => {
   return (
-    <div>
+    <div className="bottom-nav">
       <ArrowNav />
       <ImageNav />
     </div>

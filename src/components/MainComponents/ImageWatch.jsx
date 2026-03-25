@@ -4,7 +4,7 @@ const ImageWatch = () => {
   return (
     <div>
       <Image
-        src="/mint.png"
+        src="/navy.png"
         alt="billede af et ur"
         width={500}
         height={500}

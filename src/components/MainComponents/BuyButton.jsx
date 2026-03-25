@@ -1,5 +1,9 @@
 const BuyButton = () => {
-  return <button>Buy Now</button>;
+  return (
+    <button className="buy-button">
+      Buy Now
+    </button>
+  );
 };
 
 export default BuyButton;

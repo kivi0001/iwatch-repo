@@ -3,10 +3,16 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 const ArrowNav = () => {
   return (
-    <div>
-      <HiOutlineArrowNarrowLeft />
+    <div className="arrow-div">
+      <HiOutlineArrowNarrowLeft
+        color="white"
+        size={25}
+      />
       <p>1</p>
-      <HiOutlineArrowNarrowRight />
+      <HiOutlineArrowNarrowRight
+        color="white"
+        size={25}
+      />
     </div>
   );
 };
