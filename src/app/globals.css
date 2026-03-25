@@ -73,6 +73,10 @@ main {
   font-weight: bold;
 }
 
+.headline-div {
+  align-self: center;
+}
+
 .headline-div > * + * {
   font-weight: normal;
 }
@@ -133,7 +137,7 @@ figure {
     bottom: -1rem;
     left: -1rem;
     background: #434558;
-    border-radius: 20px;
+    border-radius: 10px;
     opacity: 60%;
     width: 140%;
     height: 80px;
