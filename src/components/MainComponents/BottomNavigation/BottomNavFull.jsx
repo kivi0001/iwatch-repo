@@ -1,11 +1,14 @@
-import ImageNav from "./ImageNav";
+"use client";
+import ImageNav from "./ImageNavigation/ImageNav";
 import ArrowNav from "./ArrowNav";
 
-const BottomNavFull = () => {
+const BottomNavFull = ({ setSelectedImage }) => {
   return (
     <div className="bottom-nav">
       <ArrowNav />
-      <ImageNav />
+      <ImageNav
+        setSelectedImage={setSelectedImage}
+      />
     </div>
   );
 };
