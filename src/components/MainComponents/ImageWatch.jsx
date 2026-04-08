@@ -7,7 +7,7 @@ export default function Home({
   setSelectedImage,
 }) {
   return (
-    <div>
+    <div className="image-watch-dots-div">
       <figure>
         <Image
           src={selectedImage}
@@ -16,20 +16,25 @@ export default function Home({
           height={500}
         />
       </figure>
-      <div>
-        <Dot
-          color="#b6ccda"
-          relatedImage="/ocean.png"
-          setSelectedImage={setSelectedImage}
-        ></Dot>
+      <div className="color-selection-div">
         <Dot
           color="#434558"
           relatedImage="/navy.png"
+          selectedImage={selectedImage}
           setSelectedImage={setSelectedImage}
         ></Dot>
+        <hr className="dotted-line"></hr>
         <Dot
           color="#6addcc"
           relatedImage="/mint.png"
+          selectedImage={selectedImage}
+          setSelectedImage={setSelectedImage}
+        ></Dot>
+        <hr className="dotted-line"></hr>
+        <Dot
+          color="#c4f0f9"
+          relatedImage="/ocean.png"
+          selectedImage={selectedImage}
           setSelectedImage={setSelectedImage}
         ></Dot>
       </div>

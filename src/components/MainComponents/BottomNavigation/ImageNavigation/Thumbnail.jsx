@@ -7,6 +7,7 @@ const Thumbnail = ({
 }) => {
   return (
     <figure
+      className="thumbnail-fig"
       onClick={() => setSelectedImage(imgsrc)}
     >
       <Image

@@ -15,6 +15,9 @@ body {
 main {
   max-width: 1000px;
   margin-inline: auto;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: auto;
 }
 
 /* HEADER CONTENT */
@@ -60,13 +63,6 @@ main {
 
 /* MAIN CoNTENT */
 
-.main-content-section {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-template-rows: auto;
-  margin: 3rem 1rem 2rem 1rem;
-}
-
 .headline {
   font-size: 60px;
   color: white;
@@ -79,6 +75,45 @@ main {
 
 .headline-div > * + * {
   font-weight: normal;
+}
+
+.image-watch-dots-div {
+  display: flex;
+}
+
+.color-selection-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.1rem;
+}
+
+.dot {
+  width: clamp(24px, 19.5px + 1.125cqi, 33px);
+  height: clamp(24px, 19.5px + 1.125cqi, 33px);
+  border-radius: 99px;
+  border: solid 1px white;
+
+  &:hover {
+    box-shadow: #17171748 0 2px 5px;
+    cursor: pointer;
+  }
+}
+
+.dotted-line {
+  border: none;
+  border-left: 3px dotted white;
+  height: 30px;
+  margin-inline: auto;
+  /*   position: absolute; */
+
+  top: 0;
+}
+
+.myborder {
+  border: solid 3px white;
+  width: clamp(28px, 19.5px + 1.125cqi, 35px);
+  height: clamp(28px, 19.5px + 1.125cqi, 35px);
 }
 
 .buy-button {
@@ -128,7 +163,7 @@ main {
   }
 }
 
-figure {
+.thumbnail-fig {
   position: relative;
   isolation: isolate;
   &::before {

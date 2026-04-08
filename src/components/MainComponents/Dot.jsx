@@ -3,6 +3,7 @@
 const Dot = ({
   color,
   relatedImage,
+  selectedImage,
   setSelectedImage,
 }) => {
   return (
@@ -11,7 +12,7 @@ const Dot = ({
         setSelectedImage(relatedImage)
       }
       style={{ backgroundColor: color }}
-      className="dots myborder"
+      className={`dot ${relatedImage == selectedImage && "myborder"}`}
     ></div>
   );
 };
