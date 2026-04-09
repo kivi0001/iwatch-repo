@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ImageNav = ({ setSelectedImage }) => {
   return (
-    <div className="image-nav-div">
+    <div className="col-span-[2 / 3] grid grid-cols-3 gap-16">
       <Thumbnail
         imgsrc="/navy.png"
         setSelectedImage={setSelectedImage}

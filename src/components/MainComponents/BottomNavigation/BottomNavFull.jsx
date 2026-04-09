@@ -4,11 +4,9 @@ import ArrowNav from "./ArrowNav";
 
 const BottomNavFull = ({ setSelectedImage }) => {
   return (
-    <div className="bottom-nav">
+    <div className="col-span-full row-3 my-8 grid grid-cols-subgrid">
       <ArrowNav />
-      <ImageNav
-        setSelectedImage={setSelectedImage}
-      />
+      <ImageNav setSelectedImage={setSelectedImage} />
     </div>
   );
 };
