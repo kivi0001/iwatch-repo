@@ -38,11 +38,6 @@ main {
   }
 }
 
-/* .apple-icon {
-  display: inline;
-  justify-self: center;
-} */
-
 .search-icon {
   justify-self: end;
 }
@@ -61,7 +56,9 @@ main {
   font-weight: bold;
 }
 
-/* MAIN CoNTENT */
+/**** MAIN CoNTENT *****/
+
+/* HEADLINE TEXT */
 
 .headline {
   font-size: 60px;
@@ -77,9 +74,13 @@ main {
   font-weight: normal;
 }
 
+/* IMAGE WATCH  */
+
 .image-watch-dots-div {
   display: flex;
 }
+
+/* DOTS */
 
 .color-selection-div {
   display: flex;
@@ -105,8 +106,6 @@ main {
   border-left: 3px dotted white;
   height: 30px;
   margin-inline: auto;
-  /*   position: absolute; */
-
   top: 0;
 }
 
@@ -115,6 +114,8 @@ main {
   width: clamp(28px, 19.5px + 1.125cqi, 35px);
   height: clamp(28px, 19.5px + 1.125cqi, 35px);
 }
+
+/* BUY BUTTON */
 
 .buy-button {
   grid-row: 2;
